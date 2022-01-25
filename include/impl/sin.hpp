@@ -45,7 +45,7 @@ constexpr double sin(double x) {
         case 2:
             return -detail::sin_impl(y[0], y[1], 1);
         default:
-            return detail::cos_impl(y[0], y[1]);
+            return -detail::cos_impl(y[0], y[1]);
     }
 }
 
